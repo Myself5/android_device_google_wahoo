@@ -192,3 +192,5 @@ $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/etc/init/healthd.rc)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/vendor/bin/hw/android.hardware.keymaster@4.0-service)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/vendor/etc/init/android.hardware.keymaster@4.0-service.rc)
 
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lb/libjson.so)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/lib64/libjson.so)
