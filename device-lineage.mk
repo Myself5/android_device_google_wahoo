@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
 # Kernel headers
 PRODUCT_VENDOR_KERNEL_HEADERS := device/google/wahoo/kernel-headers
 
+# MiFare Permissions file
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += device/google/wahoo/overlay-lineage
 
